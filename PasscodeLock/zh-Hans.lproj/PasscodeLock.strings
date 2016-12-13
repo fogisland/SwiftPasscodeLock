@@ -31,3 +31,7 @@
 
 /* Touch ID Fallback Button */
 "PasscodeLockTouchIDButton" = "输入密码";
+
+"Cancel" = "取消";
+"Delete" = "删除";
+"Use Touch ID" = "使用 Touch ID";

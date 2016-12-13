@@ -79,6 +79,11 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
     }
     
     // MARK: - View
+    func i18nButtons() {
+        deleteSignButton?.setTitle(localizedStringFor("Delete", comment: ""), forState: .Normal)
+        touchIDButton?.setTitle(localizedStringFor("Use Touch ID", comment: ""), forState: .Normal)        
+        cancelButton?.setTitle(localizedStringFor("Cancel", comment: ""), forState: .Normal)
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +92,7 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
         deleteSignButton?.enabled = false
         
         setupEvents()
+        i18nButtons()
     }
     
     public override func viewDidAppear(animated: Bool) {
