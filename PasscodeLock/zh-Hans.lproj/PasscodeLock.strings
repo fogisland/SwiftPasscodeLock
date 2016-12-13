@@ -7,27 +7,27 @@
 */
 
 /* Enter Passcode State */
-"PasscodeLockEnterTitle" = "Enter Passcode";
+"PasscodeLockEnterTitle" = "输入密码";
 "PasscodeLockEnterDescription" = "";
 
 /* Set Passcode State */
-"PasscodeLockSetTitle" = "Enter A Passcode";
+"PasscodeLockSetTitle" = "设定密码";
 "PasscodeLockSetDescription" = "";
 
 /* Confirm Passcode State */
-"PasscodeLockConfirmTitle" = "Confirm Passcode";
+"PasscodeLockConfirmTitle" = "确认密码";
 "PasscodeLockConfirmDescription" = "";
 
 /* Change Passcode State */
-"PasscodeLockChangeTitle" = "Enter Old Passcode";
-"PasscodeLockChangeDescription" = ".";
+"PasscodeLockChangeTitle" = "输入旧密码";
+"PasscodeLockChangeDescription" = "";
 
 /* Passcode Mismatch State */
-"PasscodeLockMismatchTitle" = "Try Again";
+"PasscodeLockMismatchTitle" = "密码错误";
 "PasscodeLockMismatchDescription" = "";
 
 /* Touch ID Reason */
-"PasscodeLockTouchIDReason" = "Authentication Required To Proceed";
+"PasscodeLockTouchIDReason" = "请将注册过 Touch ID 的手指放在 Home 键上";
 
 /* Touch ID Fallback Button */
-"PasscodeLockTouchIDButton" = "Enter Passcode";
+"PasscodeLockTouchIDButton" = "输入密码";
