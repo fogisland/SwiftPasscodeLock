@@ -68,7 +68,7 @@ open class PasscodeLockPresenter {
         passcodeLockWindow.rootViewController = passcodeLockVC
     }
     
-    open func dismissPasscodeLock(animated: Bool = true) {
+    open func dismissPasscodeLock(_ animated: Bool = true) {
         
         isPasscodePresented = false
         mainWindow?.windowLevel = 1
