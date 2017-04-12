@@ -41,7 +41,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     open var notificationCenter: NotificationCenter?
     
     internal let passcodeConfiguration: PasscodeLockConfigurationType
-    internal let passcodeLock: PasscodeLockType
+    internal var passcodeLock: PasscodeLockType
     internal var isPlaceholdersAnimationCompleted = true
     
     fileprivate var shouldTryToAuthenticateWithBiometrics = true
@@ -61,7 +61,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         super.init(nibName: nibName, bundle: bundle)
         
         passcodeLock.delegate = self
-        notificationCenter = NotificationCenter.defaultCenter()
+        notificationCenter = NotificationCenter.default
     }
     
     public convenience init(state: LockState, configuration: PasscodeLockConfigurationType, animateOnDismiss: Bool = true) {
@@ -245,7 +245,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         deleteSignButton?.isEnabled = true
         animatePlaceholders(placeholders, toState: .inactive)
         dismissPasscodeLock(lock, completionHandler: { [weak self] _ in
-            self?.successCallback?(lock: lock)
+            self?.successCallback?(lock)
         })
     }
     
